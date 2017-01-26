@@ -3,9 +3,13 @@
 @import "vars"
 
 
+@import "fonts"
+
 *
 	margin: 0
 	padding: 0
+a
+	text-decoration: none
 p
 	display: block	
 html
@@ -14,8 +18,20 @@ body
 	min-width: 320px
 	font-size: 16px
 	height: 100%
-	font-family: "Verdana", serif
+	font-family: "Comfortaa-Regular", serif
 	padding: 0
 	margin: 0 auto
+	-webkit-font-smoothing: antialiased
+.wrapper-site 
+	display: table
+	height: 100%
+	width: 100%
 
-@import "media"
+.content-site 
+	display: table-row
+	height: 100%
+
+@import "header"
+@import "menu"
+@import "footer"
+@import "index/index"

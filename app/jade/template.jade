@@ -9,9 +9,12 @@ html(lang="ru")
 		
 		include libs/styles
 	body
-		header
-			include header/header
-		block content			
-		footer
-			include footer/footer
+		.wrapper-site
+			.content-site
+				include header/header
+				block content
+			.content-footer
+				include footer/footer
 		include libs/scripts
+
+

@@ -11,7 +11,6 @@ cache          = require('gulp-cache'),
 autoprefixer   = require('gulp-autoprefixer'),
 bourbon        = require('node-bourbon'),
 ftp            = require('vinyl-ftp'),
-extender			 = require('gulp-html-extend'),
 notify         = require("gulp-notify");
 
 gulp.task('browser-sync', function() {
@@ -34,7 +33,7 @@ gulp.task('sass',  function() {
 });
 
 
-gulp.task('watch', ['sass', 'libs', 'browser-sync', 'jade'], function() {
+gulp.task('watch', ['sass', 'browser-sync', 'jade'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch('app/index.html', browserSync.reload);
 	gulp.watch('app/js/**/*.js', browserSync.reload);

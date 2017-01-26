@@ -1,0 +1,136 @@
+.footer-top
+	background-color: #333333
+	padding-top: 50px
+	padding-bottom: 50px
+	background-image: url("../img/foo_line.png")
+	background-repeat: no-repeat
+	background-position: center
+	height: 240px
+
+	&__wrap
+		max-width: 1160px
+		margin: 0 auto
+		@include clearfix
+
+	&__left
+		display: inline-block
+		width: 49%
+		float: left
+
+	&__right
+		display: inline-block
+		width: 49%
+		float: right
+		max-width: 510px
+
+
+.footer-menu
+	ul
+		list-style-type: none
+	li
+		padding: 6px 0
+		&:first-child
+			padding-top: 0
+	a
+		color: #fff
+		+fz(20px)
+		+trans
+		+ff('Comfortaa-Regular')
+		&:hover,&:focus
+			color: darken(#fff,25%)
+
+.footer-text
+	max-width: 330px
+	+fz(24px)
+	color: #fff
+	+ff('Comfortaa-Regular')
+	padding-bottom: 25px
+
+.footer-social
+	&__text
+		color: #fff
+		+fz(30px)
+		+ff('Comfortaa-Regular')
+		display: inline-block
+		padding-right: 10px
+		vertical-align: top
+	&__wrap
+		display: inline-block
+		vertical-align: middle
+		ul
+			list-style-type: none
+			li
+				display: inline-block
+				padding-right: 10px
+				&:last-child
+					padding-right: 0
+				a
+					display: block
+					width: 48px
+					height: 48px
+					background-repeat: no-repeat
+					background-position: center
+					+trans
+					&.vk
+						background-image: url("../img/soc_vk.png")
+					&.inst
+						background-image: url("../img/isnt.png")
+					&.pin
+						background-image: url("../img/pin.png")
+					&.youtube
+						background-image: url("../img/youtube.png")
+
+					&:hover,&:focus
+						opacity: .5
+
+.footer-bottom
+	background-color: #FFF
+	padding: 25px 0
+	&__wrap
+		max-width: 460px
+		margin: 0 auto
+	&__text
+		+fz(18px)
+		color: #333333
+		+ff('Comfortaa-Regular')
+
+		img
+			position: relative
+			margin: 0 10px
+			vertical-align: middle
+			bottom: 2px
+
+@media screen and (max-width: 1200px)
+	.footer-top
+		padding-left: 20px
+		padding-right: 20px
+		background-image: none
+		&__left
+			width: 40%
+		&__right
+			width: 59%
+
+@media screen and (max-width: 900px)
+	.footer-top
+		height: auto
+		&__left
+			width: 100%
+			text-align: center
+		&__right
+			text-align: center
+			padding-top: 20px
+			width: 100%
+			margin: 0 auto
+			max-width: 100%
+	.footer-text
+		margin: 0 auto
+
+@media screen and (max-width: 550px)
+	.footer-top
+		padding: 30px 10px
+	.footer-social
+		&__wrap
+			padding-top: 10px
+	.footer-bottom
+		&__text
+			text-align: center
