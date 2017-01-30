@@ -17,126 +17,114 @@
 
 .reviews
   &__title
-    font-size: em(30px)
     color: #10c7c5
+    font-size: em(30px)
     font-family: "GardensC"
     position: relative
     bottom: 15px
-    padding-bottom: 25px
+    padding-bottom: 20px
+
+  &__fullreviews
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    color: #10c7c5
+    font-family: "Comfortaa-Light"
+    width: 65px
+    height: 65px
+    border-radius: 10em
+    border: 3px solid #10c7c5
+    text-align: center
+    padding-top: 7px
+    font-size: 13px
+    &:hover
+      background-color: #10c7c5
+      color: #fff
 
   &__content
-    height: 280px
-    width: 90%
+    max-width: 1080px
     position: relative
 
   &__slider
-    overflow: hidden
     width: 90%
-    height: 100%
-    position: relative
-
-
-  &__item
-    height: 100%
-    width: 100%
-    padding-top: 15px
-    padding-bottom: 25px
-    background-color: #fff
-    border: 2px solid #e2e2e2
+    overflow: hidden
     border-radius: 20px
+    border: 2px solid #000
 
   &__top
     @include clearfix
-    max-width: 780px
+    padding-top: 20px
+    width: 90%
     margin: 0 auto
+    padding-bottom: 20px
 
   &__left
     float: left
     width: 40%
-    padding-top: 20px
-
-  &__right
-    float: right
-    width: 30%
-    padding-top: 20px
+    padding-top: 25px
 
   &__center
     float: none
+    width: 105px
     display: inline-block
-    width: 20%
-    text-align: center
     img
-      width: 100px
-      height: 100px
+      width: 105px
+      height: 105px
       border-radius: 10em
-      margin: 0 auto
 
   &__name
-    font-size: em(24px)
     color: #10c7c5
+    font-size: em(24px)
     font-family: "GardensC"
 
   &__work
     font-size: em(14px)
-    color: #333
-    padding-top: 5px
+    color: #333333
     font-family: "GardensC"
+    padding-top: 3px
+
+  &__right
+    float: right
+    width: 30%
+    padding-top: 25px
 
   &__site
     font-size: em(24px)
-    color: #333
-    font-family: "GardensC"
+    color: #333333
+    font-family: "GardensC"  
 
   &__history
     font-size: em(14px)
+    padding-top: 3px
     color: #10c7c5
-    padding-top: 5px
-    font-family: "GardensC"
+    font-family: "GardensC" 
 
   &__text
-    max-width: 820px
+    width: 90%
     margin: 0 auto
-    padding-top: 20px
-    font-size: em(22px)
-    color: #333
+    color: #333333
     font-family: "Comfortaa-Light"
-    p
-      height: 90px
-      text-overflow: ellipsis
-      overflow: hidden
+    padding-bottom: 20px
 
-  &__fullreview
+  &__buttons
+    width: 65px
+    height: 65px
     position: absolute
-    right: -5px
-    top: 50%
-    width: 70px
-    height: 70px
-    color: #10c7c5
-    font-size: em(14px)
-    font-family: "Comfortaa-Light"
-    padding-top: 12px
-    transform: translateY(-50%)
-    text-align: center
-    border: 1px solid #f2f2f2
     border-radius: 10em
-    &:hover,&:focus
-      background-color: #10c7c5
-      color: #fff
-
-  &__button
-    position: absolute
     right: 0
-    width: 60px
-    height: 60px
+    background-color: #FFF
     border: 3px solid #10c7c5
-    border-radius: 10em
+    cursor: pointer
     background-repeat: no-repeat
+    background-position: center
+    &--next
+      background-image: url("../img/rev-arrow.png")
+      top: 0
     &--prev
       background-image: url("../img/rev-arrow.png")
-      background-position: center 17px
-      top: 0
-    &--next
-      bottom: 0
-      background-image: url("../img/rev-arrow.png")
       transform: rotate(180deg)
-      background-position: center 17px
+      bottom: 0
+
+
+
