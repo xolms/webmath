@@ -106,3 +106,52 @@
   &__text
     display: block
     padding-top: 25px
+
+
+@media screen and (max-width: 1000px)
+  .products
+    &__container
+      text-align: center
+      max-width: 600px
+      margin: 0 auto
+    &__wrap
+      padding-bottom: 40px
+
+    &__title
+      padding-bottom: 30px
+    
+    &__link
+      &--all
+        float: left
+
+@media screen and (max-width: 700px)
+  .products
+    &__container
+      padding-bottom: 50px
+    &__wrap
+      padding-bottom: 20px
+    &__link
+      &--women
+        margin-right: 0px
+      &--men
+        float: right
+      &--business
+        margin-right: 0
+      &--gos
+        float: right
+      &--document
+        border: none
+        border-top: 6px solid #333333
+        border-radius: 0
+        border-bottom-left-radius: 30px
+        border-bottom-right-radius: 30px
+
+
+
+@media screen and (max-width: 590px)
+    .products
+      padding: 0 10px
+      &__wrap
+        padding-bottom: 0
+      &__link
+        border-radius: 0
