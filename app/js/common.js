@@ -111,19 +111,26 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		links_resize();
 	});
-	
-	$('.reviews__slider').owlCarousel({
+	var owl = $('.reviews__slider');
+	owl.owlCarousel({
 		loop:true,
 		responsiveClass:true,
 		items:1,
-		autoplay:true
+		autoplay:true,
 	});
-	var owl = $('.reviews__slider').data('owlCarousel');
+	owl.on("mousewheel", ".owl-wrapper", function (e) {
+    if (e.deltaY > 0) {
+      owl.trigger("owl.prev");
+    } else {
+      owl.trigger("owl.next");
+    }
+    e.preventDefault();
+  });
 	$(".reviews__buttons--next").click(function() {
-    owl.trigger("owl.next");
+    owl.trigger('next.owl.carousel');
     console.log(123);
   });
   $(".reviews__buttons--prev").click(function() {
-    owl.trigger("owl.prev");
+    owl.trigger('prev.owl.carousel');
   });
 });
