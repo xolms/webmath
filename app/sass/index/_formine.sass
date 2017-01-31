@@ -1,0 +1,200 @@
+@import "bourbon"
+.info
+  max-width: 1200px
+  margin: 0 auto
+  padding-bottom: 100px
+
+  &__title
+    color: #393939
+    font-size: em(30px)
+    font-family: "GardensC"
+    padding-bottom: 60px
+    text-align: center
+  &__container
+    background-image: url("../img/bg-info.png")
+    background-repeat: no-repeat
+    background-size: cover
+
+.portfolio
+  padding-top: 120px
+  padding-bottom: 58px
+  &__title
+    color: #4cc710
+    font-size: em(30px)
+    font-family: "GardensC"
+    text-align: right
+    position: relative
+    top: 60px
+  &__content
+    max-width: 1080px
+    margin-right: auto
+    position: relative
+    height: 200px
+    margin-left: auto
+  &__slider
+    width: 70%
+    margin: 0 auto
+    position: relative
+    top: 25px
+  &__wrap
+    width: 24%
+    display: inline-block
+    text-align: center
+    a
+      display: inline-block
+      width: 90%
+      border-radius: 30px
+      overflow: hidden
+    img
+      width: 100%
+      vertical-align: top
+
+  &__fullportfolio
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+    position: absolute
+    color: #4ac716
+    font-family: "Comfortaa-Light"
+    width: 65px
+    height: 65px
+    border-radius: 10em
+    border: 3px solid #4ac716
+    text-align: center
+    padding-top: 7px
+    font-size: 13px
+    &:hover
+      background-color: #4ac716
+      color: #fff
+
+  &__buttons
+    width: 65px
+    height: 65px
+    position: absolute
+    border-radius: 10em
+    top: 50%
+    transform: translateY(-50%)
+    background-color: #FFF
+    border: 3px solid #4ac716
+    cursor: pointer
+    background-repeat: no-repeat
+    &--next
+      background-image: url("../img/port-left.png")
+      background-position: 22px center
+      right: 80px
+    &--prev
+      background-image: url("../img/port-right.png")
+      left: 80px
+      background-position: 18px center
+
+@media screen and (max-width: 1200px)
+  .info
+    padding-bottom: 50px
+    padding-left: 10px
+    padding-right: 10px
+    &__title
+      padding-bottom: 20px
+
+  .portfolio
+    margin-top: 100px
+    padding-top: 0
+    position: relative
+    &__content
+      height: 280px
+      top: 20px
+    &__item
+      width: 72%
+      right: 0
+      margin: 0 auto
+      text-align: center
+    &__slider
+      width: 70%
+      top: 60px
+    &__buttons
+    &__fullportfolio
+      right: 0
+    &__title
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      text-align: center
+    &__wrap
+      width: 32%
+      &:nth-child(3)
+        display: none
+
+@media screen and (max-width: 1000px)
+  .portfolio
+    &__slider
+      top: 90px
+      width: 60%
+    &__content
+      height: 340px
+    &__item
+      width: 65%
+    &__buttons
+      top: 50%
+    &__wrap
+      width: 49%
+      &:nth-child(4)
+        display: none
+
+@media screen and (max-width: 900px)
+  .portfolio
+    &__slider
+      top: 100px
+    &__item
+      width: 60%
+    &__wrap
+      a
+        width: 95%
+
+@media screen and (max-width: 800px)
+  .info
+    &__container
+      background-position: center
+  .portfolio
+    &__slider
+      top: 60px
+    &__fullportfolio
+      display: none
+    &__buttons
+      &--next
+        right: 20px
+      &--prev
+        left: 20px
+    &__item
+
+    &__wrap
+      width: 100%
+      &:nth-child(2)
+        display: none
+
+@media screen and (max-width: 600px)
+  .portfolio
+    &__slider
+      top: 80px
+@media screen and (max-width: 500px)
+  .portfolio
+    &__slider
+      top: 95px
+@media screen and (max-width: 400px)
+  .portfolio
+    &__slider
+      top: 100px
+
+@media screen and (max-width: 380px)
+  .portfolio
+    &__fullportfolio
+      display: none
+    &__buttons
+      &--next
+        right: 5px
+      &--prev
+        left: 5px
+    &__item
+
+    &__wrap
+      width: 100%

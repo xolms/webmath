@@ -1,19 +1,4 @@
 @import "bourbon"
-.info
-  max-width: 1200px
-  margin: 0 auto
-  padding-bottom: 150px
-
-  &__title
-    color: #393939
-    font-size: em(30px)
-    font-family: "GardensC"
-    padding-bottom: 60px
-    text-align: center
-  &__container
-    background-image: url("../img/bg-info.png")
-    background-repeat: no-repeat
-    background-size: cover
 
 .reviews
   &__title
@@ -45,12 +30,16 @@
   &__content
     max-width: 1080px
     position: relative
+    background-color: #FFF
+    height: 280px
 
   &__slider
     width: 90%
     overflow: hidden
     border-radius: 20px
     border: 2px solid #000
+    height: 280px
+    position: relative
 
   &__top
     @include clearfix
@@ -125,6 +114,5 @@
       background-image: url("../img/rev-arrow.png")
       transform: rotate(180deg)
       bottom: 0
-
 
 
