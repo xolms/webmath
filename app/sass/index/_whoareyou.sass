@@ -1,0 +1,113 @@
+.whoyou
+	max-width: 1200px
+	margin: 0 auto
+	padding: 90px 0
+	text-align: center
+	&__title
+		color: #c7102e
+		font-size: em(30px)
+		font-family: "GardensC"
+		text-align: center
+		padding-bottom: 90px
+	&__topitem
+		text-align: center
+		display: inline-block
+		cursor: pointer
+		margin-right: 3%
+		vertical-align: top
+		&:last-child
+			margin-right: 0
+	&__topimg
+		position: relative
+		margin: 0 auto
+		&--ip
+			width: 130px
+			height: 120px
+		&--sr
+			width: 130px
+			height: 120px
+		&--gs
+			width: 130px
+			height: 120px
+		&--kb
+			width: 130px
+			height: 120px
+		&--sp
+			width: 130px
+			height: 90px
+			top: 30px
+			margin-bottom: 30px
+		&--dn
+			width: 130px
+			height: 90px
+			top: 30px
+			margin-bottom: 30px
+
+		img
+			height: 100%
+			width: auto
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: 0 auto
+			&.notactive
+			&.active
+				display: none
+	&__toptext
+		margin: 0 auto
+		padding-top: 20px
+		vertical-align: bottom
+		display: inline-block
+		font-size: em(17px)
+		color: #393939
+		font-family: "Comfortaa-Light"
+		&--ip
+			max-width: 150px
+		&--sr
+			max-width: 155px
+		&--gs
+			max-width: 148px
+		&--kb
+			max-width: 152px
+		&--sp
+			max-width: 150px
+		&--dn
+			max-width: 150px
+
+
+	&__topitem
+		&.active
+			.whoyou__topimg
+				img
+					&.active
+						display: block
+					&.notactive
+						display: none
+			.whoyou__toptext
+				&--ip
+					color: #4cc710
+				&--sr
+					color: #e2ce23
+				&--gs
+					color: #10c7c5
+				&--kb
+					color: #d03838
+				&--sp
+					color: #9c9c9c
+				&--dn
+					color: #b21b94
+
+
+@media screen and (max-width: 800px)
+	.whoyou
+		padding-top: 30px
+		padding-bottom: 30px
+		&__title
+			padding-bottom: 30px
+		&__topitem
+			margin-bottom: 20px
+@media screen and (max-width: 400px)
+	.whoyou	
+		&__toptext
+			max-width: 155px	
