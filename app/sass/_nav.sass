@@ -13,18 +13,18 @@
 		background-color: #FFF
 		position: absolute
 		right: 0
+		z-index: 4
 		transition: all .25s
 		width: 100%
 		&--first
 			right: 0
-			z-index: 2
 			&--hide
 				right: -1200px			
 		&--second
 			left: -1200px
-			z-index: 3
 			&--show
 				left: 0
+				background-color: #FFF
 	&__item
 		display: inline-block
 		margin-right: 8%
@@ -41,3 +41,18 @@
 		font-family: "GardensC"
 		&:hover,&:focus
 			color: #4cc710	
+
+@media screen and (max-width: 800px)
+	.menu
+		height: 100%
+		position: relative
+		overflow: visible
+		display: none
+		&__wrap
+			position: absolute
+			left: 0
+			right: 0
+		&__item
+			display: block
+			margin-right: 0
+
