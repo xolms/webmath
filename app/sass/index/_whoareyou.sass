@@ -99,7 +99,137 @@
 					color: #b21b94
 
 
+	&__bottomwrap
+		margin-top: 60px
+		background-color: #FFF
+		border: 1px solid #e2e2e2
+		border-radius: 20px
+		padding-top: 35px
+		padding-left: 80px
+		display: none
+		padding-right: 30px
+		padding-bottom: 50px
+
+	&__bottomtitle
+		padding-bottom: 30px
+		display: none
+		font-size: em(24px)
+		font-family: "Comfortaa-Regular"
+		&--ip
+			color: #4cc710
+		&--sr
+			color: #e2ce23
+		&--gs
+			color: #10c7c5
+		&--kb
+			color: #d03838
+		&--sp
+			color: #9c9c9c
+		&--dn
+			color: #b21b94
+	&__list
+		list-style-type: none
+		text-align: left
+		line-height: 40px
+		display: none
+		color: #333333
+		font-size: em(20px)
+		font-family: "Comfortaa-Regular"
+		&--ip
+			li 
+				&::before
+					color: #4cc710
+		&--sr
+			li 
+				&::before
+					color: #e2ce23
+		&--gs
+			li 
+				&::before
+					color: #10c7c5
+		&--kb
+			li 
+				&::before
+					color: #d03838
+		&--sp
+			li 
+				&::before
+					color: #9c9c9c
+		&--dn
+			li 
+				&::before
+					color: #b21b94
+
+		li
+			position: relative
+			&::before
+				content: '*'
+				position: absolute
+				top: 10px
+				left: -25px
+				display: inline-block
+				font-size: em(30px)
+
+	&__input
+		max-width: 280px
+		padding-top: 10px
+		padding-bottom: 10px
+		margin: 0 auto
+		input
+			border-radius: 20px
+			border: 1px solid #393939
+			height: 50px
+			line-height: 50px
+			width: 100%
+			font-size: em(24px)
+			color: #393939
+			font-family: "Comfortaa-Light"
+			padding-left: 20px
+		&--submit
+			padding-top: 20px
+			input 
+				font-size: em(24px)
+				color: #393939
+				font-family: "Comfortaa-Light"
+				border-radius: 20px
+				border: 3px solid #393939
+				width: 200px
+				margin: 0 auto
+				height: 50px
+				line-height: 40px
+				cursor: pointer
+	&__work
+		font-size: em(24px)
+		font-family: "Comfortaa-Light"
+		color: #393939
+		text-align: left
+		padding-bottom: 10px
+		&--right
+			text-align: center
+
+
+	&__bottomitem
+		display: table
+		width: 100%
+	&__bottomleft
+		display: table-cell
+		vertical-align: top
+	&__bottomright
+		display: table-cell
+		vertical-align: top
+
+
+
+
 @media screen and (max-width: 800px)
+	.whoyou__bottomwrap
+		padding-left: 30px
+		padding-right: 30px
+		margin-top: 20px
+	.whoyou__bottomright
+		display: table-footer-group
+	.whoyou__bottomleft
+		padding-bottom: 30px
 	.whoyou
 		padding-top: 30px
 		padding-bottom: 30px

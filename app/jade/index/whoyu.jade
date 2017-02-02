@@ -6,29 +6,86 @@ section.whoyou
 				img(src="img/1.png", alt="123" class="notactive")
 				img(src="img/2.png", alt="123" class="active")
 			.whoyou__toptext.whoyou__toptext--ip Индивидуальный предприниматель
-		#yousr.whoyou__topitem.active
+		#yousr.whoyou__topitem
 			.whoyou__topimg.whoyou__topimg--sr
 				img(src="img/3.png", alt="123" class="notactive")
 				img(src="img/4.png", alt="123" class="active")
 			.whoyou__toptext.whoyou__toptext--sr Владелец среднего бизнеса
-		#yougs.whoyou__topitem.active
+		#yougs.whoyou__topitem
 			.whoyou__topimg.whoyou__topimg--gs
 				img(src="img/5.png", alt="123" class="notactive")
 				img(src="img/6.png", alt="123" class="active")
 			.whoyou__toptext.whoyou__toptext--gs Директор гос. предприятия
-		#youkb.whoyou__topitem.active
+		#youkb.whoyou__topitem
 			.whoyou__topimg.whoyou__topimg--kb
 				img(src="img/7.png", alt="123" class="notactive")
 				img(src="img/8.png", alt="123" class="active")
 			.whoyou__toptext.whoyou__toptext--kb Владелец крупного бизнеса
-		#yousp.whoyou__topitem.active
+		#yousp.whoyou__topitem
 			.whoyou__topimg.whoyou__topimg--sp
 				img(src="img/9.png", alt="123" class="notactive")
 				img(src="img/10.png", alt="123" class="active")
 			.whoyou__toptext.whoyou__toptext--sp Владелец Start-up
-		#youdn.whoyou__topitem.active
+		#youdn.whoyou__topitem
 			.whoyou__topimg.whoyou__topimg--dn
 				img(src="img/11.png", alt="123" class="notactive")
 				img(src="img/12.png", alt="123" class="active")
 			.whoyou__toptext.whoyou__toptext--dn Не могу определиться
 	.whoyou__bottomwrap
+		h3.whoyou__bottomtitle.whoyou__bottomtitle--ip Вы - индивидуальный предприниматель!
+		h3.whoyou__bottomtitle.whoyou__bottomtitle--sr Вы - индивидуальный предприниматель!
+		h3.whoyou__bottomtitle.whoyou__bottomtitle--gs Вы - индивидуальный предприниматель!
+		h3.whoyou__bottomtitle.whoyou__bottomtitle--kb Вы - индивидуальный предприниматель!
+		h3.whoyou__bottomtitle.whoyou__bottomtitle--sp Вы - индивидуальный предприниматель!
+		h3.whoyou__bottomtitle.whoyou__bottomtitle--dn Вы - индивидуальный предприниматель!
+		.whoyou__bottomitem
+			.whoyou__bottomleft
+				h4.whoyou__work Мы предлагаем
+				ul.whoyou__list.whoyou__list--ip
+					li Минимальные вложения для старта.
+					li Возможность расрочки
+					li Быстрый результат
+					li Помощь не только в интернет сфере
+					li Расскажем,покажем,научим и поделимся опытом
+				ul.whoyou__list.whoyou__list--sr
+					li Минимальные вложения для старта.
+					li Возможность расрочки
+					li Быстрый результат
+					li Помощь не только в интернет сфере
+					li Расскажем,покажем,научим и поделимся опытом
+				ul.whoyou__list.whoyou__list--gs
+					li Минимальные вложения для старта.
+					li Возможность расрочки
+					li Быстрый результат
+					li Помощь не только в интернет сфере
+					li Расскажем,покажем,научим и поделимся опытом
+				ul.whoyou__list.whoyou__list--kb
+					li Минимальные вложения для старта.
+					li Возможность расрочки
+					li Быстрый результат
+					li Помощь не только в интернет сфере
+					li Расскажем,покажем,научим и поделимся опытом
+				ul.whoyou__list.whoyou__list--sp
+					li Минимальные вложения для старта.
+					li Возможность расрочки
+					li Быстрый результат
+					li Помощь не только в интернет сфере
+					li Расскажем,покажем,научим и поделимся опытом
+				ul.whoyou__list.whoyou__list--dn
+					li Минимальные вложения для старта.
+					li Возможность расрочки
+					li Быстрый результат
+					li Помощь не только в интернет сфере
+					li Расскажем,покажем,научим и поделимся опытом
+			.whoyou__bottomright
+				form(action="#")
+					h4.whoyou__work.whoyou__work--right Узнать подробности
+					.whoyou__input
+						input(type="text" required placeholder="Имя" id="input_name" onBlur='this.value=this.value.replace(/[^\йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,"")' onkeyup='this.value=this.value.replace(/[^\йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,"")')
+					.whoyou__input
+						input(type="phone" required id="input_phone" placeholder="Телефон")
+						input(type="hidden" id="input_category")
+					.whoyou__input--submit
+						input(type="submit" id="input_submit" value="Отправить")						
+
+
