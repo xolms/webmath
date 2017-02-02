@@ -2,7 +2,7 @@ function menu() {
 $('.menu__link--open').click(function(event) {
 	$('.menu__list--first').toggleClass('menu__list--first--hide');
 	$('.menu__list--second').toggleClass('menu__list--second--show');
-	$('.menu__link--open').toggleClass('active');
+	$('.menu__link--open').parent().toggleClass('activepopup');
 });
 }
 
