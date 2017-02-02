@@ -1,0 +1,41 @@
+.menu
+	max-width: 1200px
+	margin: 0 auto
+	overflow: hidden
+	border-top: 1px solid #e0e0e0
+	border-bottom: 1px solid #e0e0e0
+	position: relative
+	height: 50px
+	line-height: 45px
+	&__list
+		list-style-type: none
+		text-align: center
+		background-color: #FFF
+		position: absolute
+		right: 0
+		transition: all .25s
+		width: 100%
+		&--first
+			right: 0
+			z-index: 2
+			&--hide
+				right: -1200px			
+		&--second
+			left: -1200px
+			z-index: 3
+			&--show
+				left: 0
+	&__item
+		display: inline-block
+		width: 15%
+		&.active
+			.menu__link
+				color: #4cc710
+	&__link
+		display: inline-block
+		cursor: pointer
+		font-size: em(18px)
+		color: #393939
+		font-family: "GardensC"
+		&:hover,&:focus
+			color: #4cc710	

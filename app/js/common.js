@@ -1,3 +1,13 @@
+function menu() {
+$('.menu__link--open').click(function(event) {
+	$('.menu__list--first').toggleClass('menu__list--first--hide');
+	$('.menu__list--second').toggleClass('menu__list--second--show');
+	$('.menu__link--open').toggleClass('active');
+});
+}
+
+
+
 function valid_form() {
 	var namein = $('#input_name');
 	var nameval = false;
@@ -5,16 +15,6 @@ function valid_form() {
 	var phoneval = false;
 	console.log(phoneval,nameval);
 
-	namein.blur(function(event) {
-		if($(this).val().length<5){
-			alert('Имя очень короткое');
-			nameval = false;
-		}
-		else
-		{
-			return	nameval = true;
-		}
-	});
 	phonein.keydown(function(event) {
         // Разрешаем: backspace, delete, tab и escape
         if ( event.keyCode == 46 || event.keyCode == 8  || event.keyCode == 9 || event.keyCode == 27 || 
@@ -325,6 +325,7 @@ function links_resize () {
 $(document).ready(function(){
 	slider_image();
 	slider_rev();
+	menu();
 	form_replace();
 	valid_form();
 	slider_port();
