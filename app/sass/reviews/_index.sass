@@ -146,4 +146,43 @@
 				width: 100%
 				height: auto
 
+
+@media screen and (max-width: 1000px)
+	.rev
+		&__topright
+			display: none
+		&__topleft
+			width: 80%
+		&__topcenter
+			float: right
+			width: 20%
+
+@media screen and (max-width: 800px)
+	.reviewspage
+		&__title
+			&--none
+				display: none
+	.myclients
+		display: none
+
+	.reviewspage__right
+		display: table-header-group
+	.formrev__item
+		margin-left: auto
+		margin-right: auto
+
+@media screen and (max-width: 400px)
+	.rev
+		&__topleft
+			width: 100%
+			text-align: center
+		&__topcenter
+			display: none
+		&__footer
+			text-align: center
+		&__footerright
+			float: none
+	.reviewspage__wrap
+		padding-bottom: 0
+
 @import "callback"
