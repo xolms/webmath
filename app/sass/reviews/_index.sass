@@ -1,0 +1,149 @@
+.reviewspage
+	&__wrap
+		display: table
+		max-width: 1200px
+		margin: 0 auto
+		width: 100%
+		padding-top: 40px
+		padding-bottom: 60px
+	&__left
+		display: table-cell
+		vertical-align: top
+		padding: 0 20px
+	&__right
+		display: table-cell
+		vertical-align: top
+		max-width: 400px
+		width: 30%
+		padding: 0 10px
+
+	&__title
+		text-align: center
+		color: #333333
+		font-family: "GardensC"
+		font-size: em(30px)
+		padding-bottom: 50px
+
+.formrev
+	padding-bottom: 50px
+	&__item
+		padding-top: 17px
+		max-width: 360px
+		&:first-child
+			padding-top: 0
+		input,textarea
+			width: 100%
+			font-size: em(17px)
+			color: #10c7c5
+			font-family: "Comfortaa-Light"
+			height: 50px
+			border: 1px solid #10c7c5 
+			padding-left: 18px
+			border-radius: 15px
+			&::placeholder
+				color: #10c7c5
+			&:hover,&:focus
+				outline: none
+		input
+			line-height: 50px
+		textarea
+			padding-top: 10px
+			height: 250px
+			resize: none
+		.rev_submit
+			background-color: #10c7c5
+			color: #fff
+			font-size: em(24px)
+			font-family: "Comfortaa-Regular"
+			line-height: 40px
+			cursor: pointer
+
+.myclients
+	&__wrap
+		max-width: 280px
+		margin: 0 auto
+	&__item
+		margin-top: 40px
+		&:first-child
+			margin-top: 0
+		img
+			width: 100%
+			height: auto
+
+
+.rev
+	&__item
+		border: 1px solid #e2e2e2
+		padding-left: 30px
+		padding-right: 30px
+		padding-top: 15px
+		padding-bottom: 30px
+		border-radius: 10px
+		margin-bottom: 60px
+	&__top
+		@include clearfix
+		padding-bottom: 25px
+	&__topleft
+		float: left
+		width: 40%
+		font-family: "GardensC"
+		padding-top: 25px
+
+	&__name
+		color: #10c7c5
+		font-size: em(24px)
+		
+	&__work
+		color: #333333
+		font-size: em(14px)
+	&__site
+		color: #333333
+		font-size: em(24px)		
+	&__history
+		color: #10c7c5
+		font-size: em(14px)
+
+	&__topcenter
+		width: 15%
+		float: none
+		display: inline-block
+		text-align: center
+		img
+			margin: 0 auto
+			width: 100px
+			height: 100px
+			border-radius: 10em
+	&__topright
+		float: right
+		width: 40%
+		padding-top: 25px
+
+	&__center
+		padding-bottom: 40px
+		p
+			padding-top: 20px
+			font-size: em(22px)
+			color: #333333
+			font-family: "Comfortaa-Light"
+			&:first-child
+				padding-top: 0
+			&:first-letter
+				padding-left: 15px
+
+
+
+	&__footer
+		@include clearfix
+	&__footerright
+		float: right
+		a
+			width: 70px
+			display: inline-block
+			margin-left: 20px
+			&:first-child
+				margin-left: 0
+			img
+				width: 100%
+				height: auto
+
+@import "callback"
