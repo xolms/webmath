@@ -1,0 +1,83 @@
+.portfolio__page
+	padding-top: 20px
+	margin: 0 auto
+	padding-bottom: 60px
+	max-width: 1200px
+	@include clearfix
+
+.portfolio__wrappper
+	float: left
+	width: 25%
+	padding-bottom: 20px
+	min-width: 260px
+
+.portfolio__items
+	display: block
+	max-width: 220px
+	width: 100%
+	margin: 0 auto
+	text-align: center
+	p 
+		color: #393939
+		font-size: em(22px)
+		font-family: "GardensC"
+
+.portfolio__imgwrap
+	max-width: 180px
+	width: 100%
+	max-height: 160px
+	height: 100%
+	overflow: hidden
+	display: block
+	margin: 0 auto
+	border-radius: 20px
+	margin-bottom: 10px
+	img
+		height: 100%
+		width: auto
+
+
+.pageheadus
+	max-width: 1200px
+	margin: 0 auto
+	img 
+		width: 100%
+.uslugi__page
+	padding-top: 50px
+	padding-bottom: 50px
+	padding-left: 20px
+	padding-right: 20px
+	max-width: 1200px
+	margin: 0 auto
+
+.uslugi__titlewrap
+	background-color: #333333
+	margin-bottom: 60px
+	height: 22px
+.uslugi__title 
+	background-color: #FFF
+	display: inline-block
+	position: relative
+	bottom: 8px
+	padding-right: 20px
+	color: #333333
+	font-size: em(30px)
+	font-family: "GardensC"
+
+.uslugi__text
+	color: #333333
+	font-size: em(24px)
+	font-family: "Comfortaa-Light"
+	p 
+		margin-top: 20px
+		&:first-child
+			margin-top: 0
+		&:first-letter
+			padding-left: 20px	
+
+@media screen and (max-width: 1050px)
+	.portfolio__page
+		text-align: center
+	.portfolio__wrappper
+		float: none
+		display: inline-block
