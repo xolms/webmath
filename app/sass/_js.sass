@@ -1,0 +1,100 @@
+.scroll-top
+	width: 70px
+	background-color: #FFF
+	border-radius: 20px
+	text-align: center
+	position: fixed
+	left: 2%
+	bottom: 20%
+	cursor: pointer
+	height: 70px
+	transition: all .25s
+	z-index: 100
+	&:hover,&:focus
+		background-color: #393939
+		p 
+			color: #fff
+		img
+			&.scroll-hiden
+				display: block
+			&.scroll-show
+				display: none
+
+	&__img
+		position: relative
+		width: 33px
+		margin: 0 auto
+		margin-bottom: 5px
+		height: 18px
+		margin-top: 15px
+
+	img
+		width: 100%
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		&.scroll-hiden
+			display: none
+	p 
+		font-size: em(16px)
+		color: #393939
+		transition all .25s
+		font-family: "Comfortaa-Light"
+
+
+.modal
+	position: fixed
+	top: 0
+	display: none
+	bottom: 0
+	left: 0
+	right: 0
+	background-color: rgba(57,57,57,.5)
+	z-index: 90
+	&__wrapper
+		background-color: #FFF
+		display: block
+		text-align: center
+		margin: 0 auto
+		max-width: 680px
+		width: 100%
+		border-radius: 20px
+		padding-top: 30px
+		padding-bottom: 30px
+		top: 50%
+		padding-left: 20px
+		padding-right: 20px
+		position: relative
+		transform: translateY(-50%)
+	&__title
+		color: #393939
+		font-size: em(30px)
+		font-family: "GardensC"
+		padding-bottom: 35px
+	&__item
+		max-width: 360px
+		margin: 0 auto
+		width: 100%
+		padding-top: 25px
+		&:first-child
+			padding-top: 0
+		input,textarea
+			width: 100%
+			border: 1px solid #393939
+			font-size: em(24px)
+			font-family: "GardensC"
+			border-radius: 20px
+			padding-left: 15px
+		input
+			height: 55px
+		textarea
+			padding-top: 15px
+			resize: none
+			height: 200px
+		.modal__submit
+			padding: 0
+			cursor: pointer
+			background-color: #393939
+			color: #fff
+			font-size: em(30px)

@@ -16,6 +16,23 @@ html(lang="ru")
 				block content
 			.content-footer
 				include footer/footer
+				.scroll-top
+					.scroll-top__img
+						img(src="img/scroll.png", alt="scroll" class="scroll-show")
+						img(src="img/scroll-active.png", alt="scroll" class="scroll-hiden")
+					p Вверх
+				.modal
+					.modal__wrapper
+						h2.modal__title Заказать звонок
+						form(action="")
+							.modal__item
+								input(type="text" required placeholder="Имя" onBlur='this.value=this.value.replace(/[^\йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,"")' onkeyup='this.value=this.value.replace(/[^\йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,"")')
+							.modal__item
+								input(type="phone" class="input_phone" required placeholder="Телефон")
+							.modal__item
+								textarea(placeholder="Коментарий")
+							.modal__item
+								input(type="submit" value="Отправить" class="modal__submit")
 		include libs/scripts
 
 

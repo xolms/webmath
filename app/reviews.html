@@ -4,8 +4,6 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="css/styles.min.css"/>
   </head>
   <body>
@@ -211,10 +209,32 @@
             </div>
           </div>
         </footer>
+        <div class="scroll-top">
+          <div class="scroll-top__img"><img src="img/scroll.png" alt="scroll" class="scroll-show"/><img src="img/scroll-active.png" alt="scroll" class="scroll-hiden"/></div>
+          <p>Вверх</p>
+        </div>
+        <div class="modal">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form action="">
+              <div class="modal__item">
+                <input type="text" required="required" placeholder="Имя" onBlur="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)" onkeyup="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)"/>
+              </div>
+              <div class="modal__item">
+                <input type="phone" required="required" placeholder="Телефон" class="input_phone"/>
+              </div>
+              <div class="modal__item">
+                <textarea placeholder="Коментарий"></textarea>
+              </div>
+              <div class="modal__item">
+                <input type="submit" value="Отправить" class="modal__submit"/>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
   </body>
 </html>
