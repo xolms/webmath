@@ -25,12 +25,12 @@ function scroll() {
 	});
 }
 function modal(){
-	$('.header__callback, .callback__footer--button').click(function(event) {
+	$('.header__callback, .callback__footer--button, .callback__button').click(function(event) {
 		$('.modal').show();
 	});
 	$(document).mouseup(function (e){
 		var elem = $('.modal');
-		var elems = $('.modal_wrapper');
+		var elems = $('.modal__wrapper');
 		if (!elems.is(e.target) 
 			&& elems.has(e.target).length === 0) {
 			elem.hide();
