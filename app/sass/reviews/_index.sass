@@ -40,10 +40,15 @@
 			border: 1px solid #10c7c5 
 			padding-left: 18px
 			border-radius: 15px
+			color: #393939
 			&::placeholder
 				color: #10c7c5
-			&:hover,&:focus
+			&:focus
 				outline: none
+				border: 1px solid #393939
+				&::placeholder
+					color: #393939
+
 		input
 			line-height: 50px
 		textarea
@@ -51,12 +56,16 @@
 			height: 250px
 			resize: none
 		.rev_submit
-			background-color: #10c7c5
-			color: #fff
+			background-color: #fff
+			color: #10c7c5
+			border: 2px solid #10c7c5
 			font-size: em(24px)
 			font-family: "Comfortaa-Regular"
 			line-height: 40px
 			cursor: pointer
+			&:hover
+				color: #fff
+				background-color: #10c7c5
 
 .myclients
 	&__wrap
@@ -97,11 +106,13 @@
 		color: #333333
 		font-size: em(14px)
 	&__site
-		color: #333333
-		font-size: em(24px)		
+		a
+			color: #333333
+			font-size: em(24px)		
 	&__history
-		color: #10c7c5
-		font-size: em(14px)
+		a,span
+			color: #10c7c5
+			font-size: em(14px)
 
 	&__topcenter
 		width: 15%

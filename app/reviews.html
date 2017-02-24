@@ -39,20 +39,29 @@
               <ul class="menu__list menu__list--first">
                 <li class="menu__item active"><a href="#" class="menu__link">Главная</a></li>
                 <li class="menu__item">
-                  <div class="menu__link menu__link--open">Услуги </div>
+                  <div onclick="GetMenu('uslugi')" class="menu__link">Услуги </div>
                 </li>
                 <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Портфолио </a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Инфо</a></li>
+                <li class="menu__item">
+                  <div onclick="GetMenu('info')" class="menu__link">Инфо</div>
+                </li>
                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
               </ul>
-              <ul class="menu__list menu__list--second">
+              <ul class="menu__list menu__list--second menu__list--uslugi">
                 <li class="menu__item">
-                  <div class="menu__link menu__link--open">Услуги </div>
+                  <div onclick="GetMenu('main')" class="menu__link menu-link--popup">Услуги </div>
                 </li>
                 <li class="menu__item"><a href="#" class="menu__link">Создание сайтов</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Продвижение</a></li>
                 <li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
+              </ul>
+              <ul class="menu__list menu__list--second menu__list--info">
+                <li class="menu__item">
+                  <div onclick="GetMenu('main')" class="menu__link menu-link--popup">Инфо </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Клиенты</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Статьи		</a></li>
               </ul>
             </div>
           </div>
@@ -75,8 +84,8 @@
                   </div>
                   <div class="rev__topcenter"><img src="http://lorempixel.com/1920/1080"/></div>
                   <div class="rev__topright">
-                    <div class="rev__site">Работа: beautyelixir.ru</div>
-                    <div class="rev__history">История, контакты</div>
+                    <div class="rev__site"> <a href="#">	Работа: beautyelixir.ru</a></div>
+                    <div class="rev__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
                   </div>
                 </div>
                 <div class="rev__center">
@@ -95,8 +104,8 @@
                   </div>
                   <div class="rev__topcenter"><img src="http://lorempixel.com/1920/1080"/></div>
                   <div class="rev__topright">
-                    <div class="rev__site">Работа: beautyelixir.ru</div>
-                    <div class="rev__history">История, контакты</div>
+                    <div class="rev__site"> <a href="#">	Работа: beautyelixir.ru</a></div>
+                    <div class="rev__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
                   </div>
                 </div>
                 <div class="rev__center">
@@ -115,8 +124,8 @@
                   </div>
                   <div class="rev__topcenter"><img src="http://lorempixel.com/1920/1080"/></div>
                   <div class="rev__topright">
-                    <div class="rev__site">Работа: beautyelixir.ru</div>
-                    <div class="rev__history">История, контакты</div>
+                    <div class="rev__site"> <a href="#">	Работа: beautyelixir.ru</a></div>
+                    <div class="rev__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
                   </div>
                 </div>
                 <div class="rev__center">

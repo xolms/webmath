@@ -26,6 +26,7 @@
     &:hover
       background-color: #10c7c5
       color: #fff
+      border: 3px solid #10c7c5
 
   &__content
     max-width: 1080px
@@ -79,15 +80,18 @@
     padding-top: 25px
 
   &__site
-    font-size: em(24px)
-    color: #333333
-    font-family: "GardensC"  
+    a
+      font-size: em(24px)
+      color: #333333
+      font-family: "GardensC"
+
 
   &__history
-    font-size: em(14px)
-    padding-top: 3px
-    color: #10c7c5
-    font-family: "GardensC" 
+    a,span
+      font-size: em(14px)
+      padding-top: 3px
+      color: #10c7c5
+      font-family: "GardensC" 
 
   &__text
     width: 90%
@@ -110,10 +114,18 @@
     &--next
       background-image: url("../img/rev-arrow.png")
       top: 0
+      &:hover
+        background-image: url("../img/arrow-active.png")
+        background-color: #10c7c5
+        transform: rotate(90deg)
     &--prev
       background-image: url("../img/rev-arrow.png")
       transform: rotate(180deg)
       bottom: 0
+      &:hover
+        background-color: #10c7c5
+        background-image: url("../img/arrow-active.png")
+        transform: rotate(270deg)
 
 
 @media screen and (max-width: 800px)

@@ -5,21 +5,28 @@ nav
 				li.menu__item.active
 					a(href="#" class="menu__link") Главная
 				li.menu__item
-					.menu__link.menu__link--open Услуги 
+					.menu__link(onclick="GetMenu('uslugi')") Услуги 
 				li.menu__item
 					a(href="#" class="menu__link") Отзывы
 				li.menu__item
 					a(href="#" class="menu__link") Портфолио 
 				li.menu__item
-					a(href="#" class="menu__link") Инфо
+					.menu__link(onclick="GetMenu('info')") Инфо
 				li.menu__item
 					a(href="#" class="menu__link") Контакты
-			ul.menu__list.menu__list--second
+			ul.menu__list.menu__list--second.menu__list--uslugi
 				li.menu__item
-					.menu__link.menu__link--open Услуги 
+					.menu__link.menu-link--popup(onclick="GetMenu('main')") Услуги 
 				li.menu__item
 					a(href="#" class="menu__link") Создание сайтов
 				li.menu__item
 					a(href="#" class="menu__link") Продвижение
 				li.menu__item
 					a(href="#" class="menu__link") Поддержка
+			ul.menu__list.menu__list--second.menu__list--info
+				li.menu__item
+					.menu__link.menu-link--popup(onclick="GetMenu('main')") Инфо 
+				li.menu__item
+					a(href="#" class="menu__link") Клиенты
+				li.menu__item
+					a(href="#" class="menu__link") Статьи		

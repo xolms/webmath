@@ -43,11 +43,24 @@
     a
       display: inline-block
       width: 90%
+      position: relative
       border-radius: 30px
       overflow: hidden
+      &:hover
+        &::after
+          content: ''
+          position: absolute
+          top: 0
+          bottom: 0
+          left: 0
+          right: 0
+          background-color: rgba(255,255,255,.3)
+          z-index: 20
     img
       width: 100%
       vertical-align: top
+      position: relative
+
 
   &__fullportfolio
     position: absolute
@@ -83,10 +96,16 @@
       background-image: url("../img/port-left.png")
       background-position: 22px center
       right: 80px
+      &:hover
+        background-image: url("../img/arrow-active-right.png")
+        background-color: #4ac716
     &--prev
       background-image: url("../img/port-right.png")
       left: 80px
       background-position: 18px center
+      &:hover
+        background-color: #4ac716
+        background-image: url("../img/arrow-active.png")
 
 @media screen and (max-width: 1200px)
   .info
