@@ -106,8 +106,7 @@
 @media screen and (max-width: 800px)
 	.header
 		&__burgerwrap
-			display: block
-
+			display: inline-block
 @media screen and (max-width: 600px)
 	.header
 		&__left
@@ -116,19 +115,17 @@
 			text-align: center
 		&__logodesc
 			text-align: left
-		&__right
-			float: none
-			display: block
-			text-align: center
-			padding-top: 10px
 		&__phone
 			text-align: center
 		&__callback
 			text-align: center
 			display: inline-block
 		&__burgerwrap
-			padding-top: 50px
-			float: none
+			float: left
+			position: relative
+			top: 25px
+			padding-top: 0
+			width: 60px
 		&__burger
 			text-align: center
 			margin: 0 auto
@@ -137,7 +134,10 @@
 	.header
 		&__logo
 			margin-right: 0
-		&__logotitle
-			display: none
 		&__logodesc
-			display: none
+			max-width: 250px
+	.header__burgerwrap
+		top: 25px
+
+	.header__right
+		float: right		

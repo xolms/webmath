@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper-site">
+      <div class="content-site">
+        <header>
+          <div class="header__wrap">
+            <div class="header__left"><a href="#" class="header__logo">
+                <div class="header__logoimg"><img src="img/logo.png" alt="logo"/></div>
+                <div class="header__logotext">
+                  <div class="header__logotitle">ВебМатематика</div>
+                  <div class="header__logodesc">простое решение сложных задач</div>
+                </div></a></div>
+            <div class="header__center">
+              <div class="header__desc">Просто создаём сайты.</div>
+            </div>
+            <div class="header__right">
+              <div class="header__phone">8 (495) 466-23-23 </div>
+              <div class="header__callback">мы вам перезвоним</div>
+            </div>
+            <div class="header__burgerwrap">
+              <div class="header__burger">
+                <div class="header__burgeritem"></div>
+                <div class="header__burgeritem"></div>
+                <div class="header__burgeritem"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <nav>
+          <div class="menu">
+            <div class="menu__wrap">
+              <ul class="menu__list menu__list--first">
+                <li class="menu__item active"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__item">
+                  <div onclick="GetMenu('uslugi')" class="menu__link">Услуги </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Портфолио </a></li>
+                <li class="menu__item">
+                  <div onclick="GetMenu('info')" class="menu__link">Инфо</div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              </ul>
+              <ul class="menu__list menu__list--second menu__list--uslugi">
+                <li class="menu__item">
+                  <div onclick="GetMenu('main')" class="menu__link menu-link--popup">Услуги </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Создание сайтов</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Продвижение</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
+              </ul>
+              <ul class="menu__list menu__list--second menu__list--info">
+                <li class="menu__item">
+                  <div onclick="GetMenu('main')" class="menu__link menu-link--popup">Инфо </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Клиенты</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Статьи		</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <section class="whoyou">
+          <h2 class="whoyou__title">Сразу к делу! Кто вы?</h2>
+          <div class="whoyou__topwrap">
+            <div id="youip" class="whoyou__topitem">
+              <div class="whoyou__topimg whoyou__topimg--ip"><img src="img/1.png" alt="123" class="notactive"/><img src="img/2.png" alt="123" class="active"/></div>
+              <div class="whoyou__toptext whoyou__toptext--ip">Индивидуальный предприниматель</div>
+            </div>
+            <div id="yousr" class="whoyou__topitem">
+              <div class="whoyou__topimg whoyou__topimg--sr"><img src="img/3.png" alt="123" class="notactive"/><img src="img/4.png" alt="123" class="active"/></div>
+              <div class="whoyou__toptext whoyou__toptext--sr">Владелец среднего бизнеса</div>
+            </div>
+            <div id="yougs" class="whoyou__topitem">
+              <div class="whoyou__topimg whoyou__topimg--gs"><img src="img/5.png" alt="123" class="notactive"/><img src="img/6.png" alt="123" class="active"/></div>
+              <div class="whoyou__toptext whoyou__toptext--gs">Директор гос. предприятия</div>
+            </div>
+            <div id="youkb" class="whoyou__topitem">
+              <div class="whoyou__topimg whoyou__topimg--kb"><img src="img/7.png" alt="123" class="notactive"/><img src="img/8.png" alt="123" class="active"/></div>
+              <div class="whoyou__toptext whoyou__toptext--kb">Владелец крупного бизнеса</div>
+            </div>
+            <div id="yousp" class="whoyou__topitem">
+              <div class="whoyou__topimg whoyou__topimg--sp"><img src="img/9.png" alt="123" class="notactive"/><img src="img/10.png" alt="123" class="active"/></div>
+              <div class="whoyou__toptext whoyou__toptext--sp">Владелец Start-up</div>
+            </div>
+            <div id="youdn" class="whoyou__topitem">
+              <div class="whoyou__topimg whoyou__topimg--dn"><img src="img/11.png" alt="123" class="notactive"/><img src="img/12.png" alt="123" class="active"/></div>
+              <div class="whoyou__toptext whoyou__toptext--dn">Не могу определиться</div>
+            </div>
+          </div>
+          <div class="whoyou__bottomwrap">
+            <h3 class="whoyou__bottomtitle whoyou__bottomtitle--ip">Вы - индивидуальный предприниматель!</h3>
+            <h3 class="whoyou__bottomtitle whoyou__bottomtitle--sr">Вы - индивидуальный предприниматель!</h3>
+            <h3 class="whoyou__bottomtitle whoyou__bottomtitle--gs">Вы - индивидуальный предприниматель!</h3>
+            <h3 class="whoyou__bottomtitle whoyou__bottomtitle--kb">Вы - индивидуальный предприниматель!</h3>
+            <h3 class="whoyou__bottomtitle whoyou__bottomtitle--sp">Вы - индивидуальный предприниматель!</h3>
+            <h3 class="whoyou__bottomtitle whoyou__bottomtitle--dn">Вы - индивидуальный предприниматель!</h3>
+            <div class="whoyou__bottomitem">
+              <div class="whoyou__bottomleft">
+                <h4 class="whoyou__work">Мы предлагаем</h4>
+                <ul class="whoyou__list whoyou__list--ip">
+                  <li>Минимальные вложения для старта.</li>
+                  <li>Возможность расрочки</li>
+                  <li>Быстрый результат</li>
+                  <li>Помощь не только в интернет сфере</li>
+                  <li>Расскажем,покажем,научим и поделимся опытом</li>
+                </ul>
+                <ul class="whoyou__list whoyou__list--sr">
+                  <li>Минимальные вложения для старта.</li>
+                  <li>Возможность расрочки</li>
+                  <li>Быстрый результат</li>
+                  <li>Помощь не только в интернет сфере</li>
+                  <li>Расскажем,покажем,научим и поделимся опытом</li>
+                </ul>
+                <ul class="whoyou__list whoyou__list--gs">
+                  <li>Минимальные вложения для старта.</li>
+                  <li>Возможность расрочки</li>
+                  <li>Быстрый результат</li>
+                  <li>Помощь не только в интернет сфере</li>
+                  <li>Расскажем,покажем,научим и поделимся опытом</li>
+                </ul>
+                <ul class="whoyou__list whoyou__list--kb">
+                  <li>Минимальные вложения для старта.</li>
+                  <li>Возможность расрочки</li>
+                  <li>Быстрый результат</li>
+                  <li>Помощь не только в интернет сфере</li>
+                  <li>Расскажем,покажем,научим и поделимся опытом</li>
+                </ul>
+                <ul class="whoyou__list whoyou__list--sp">
+                  <li>Минимальные вложения для старта.</li>
+                  <li>Возможность расрочки</li>
+                  <li>Быстрый результат</li>
+                  <li>Помощь не только в интернет сфере</li>
+                  <li>Расскажем,покажем,научим и поделимся опытом</li>
+                </ul>
+                <ul class="whoyou__list whoyou__list--dn">
+                  <li>Минимальные вложения для старта.</li>
+                  <li>Возможность расрочки</li>
+                  <li>Быстрый результат</li>
+                  <li>Помощь не только в интернет сфере</li>
+                  <li>Расскажем,покажем,научим и поделимся опытом</li>
+                </ul>
+              </div>
+              <div class="whoyou__bottomright">
+                <form action="#">
+                  <h4 class="whoyou__work whoyou__work--right">Узнать подробности</h4>
+                  <div class="whoyou__input">
+                    <input type="text" required="required" placeholder="Имя" id="input_name" onBlur="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)" onkeyup="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)"/>
+                  </div>
+                  <div class="whoyou__input">
+                    <input type="phone" required="required" id="input_phone" placeholder="Телефон"/>
+                    <input type="hidden" id="input_category"/>
+                  </div>
+                  <div class="whoyou__input--submit">
+                    <input type="submit" id="input_submit" value="Отправить"/>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info">
+          <h2 class="info__title">Что нужно знать о студии?</h2>
+          <div class="info__container">
+            <div class="reviews">
+              <h3 class="reviews__title">Что о них говорят</h3>
+              <div class="reviews__content">
+                <div class="reviews__buttons reviews__buttons--prev"></div>
+                <div class="reviews__buttons reviews__buttons--next"></div><a href="#" class="reviews__fullreviews">Все отзывы</a>
+                <div class="reviews__slider">
+                  <div class="reviews__item">
+                    <div class="reviews__top">
+                      <div class="reviews__left">
+                        <div class="reviews__name">Екатерина Иванова1</div>
+                        <div class="reviews__work">Индивидуальный предприниматель</div>
+                      </div>
+                      <div class="reviews__center"><img src="http://lorempixel.com/200/200" alt="123"/></div>
+                      <div class="reviews__right">
+                        <div class="reviews__site"> <a href="#">Работа: beautyelixir.ru</a></div>
+                        <div class="reviews__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
+                      </div>
+                    </div>
+                    <div class="reviews__text">
+                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dicta provident quidem similique totam et, harum quo quia iusto vitae quam rem modi qui ducimus at iste aperiam ipsum deleniti.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio">
+              <div class="portfolio__content">
+                <div class="portfolio__buttons portfolio__buttons--prev"></div>
+                <div class="portfolio__buttons portfolio__buttons--next"></div><a href="#" class="portfolio__fullportfolio">Все работы</a>
+                <div class="portfolio__slider">
+                  <div class="portfolio__item">
+                    <div class="portfolio__wrap"><a href="#"><img src="http://lorempixel.com/200/200" alt="123"/></a></div>
+                    <div class="portfolio__wrap"><a href="#"><img src="http://lorempixel.com/200/200" alt="123"/></a></div>
+                    <div class="portfolio__wrap"><a href="#"><img src="http://lorempixel.com/200/200" alt="123"/></a></div>
+                    <div class="portfolio__wrap"><a href="#"><img src="http://lorempixel.com/200/200" alt="123"/></a></div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="portfolio__title">Что они уже сделали</h3>
+            </div>
+          </div>
+        </section>
+        <section class="slider-images">
+          <h2 class="slider-images__title">Немного времени, на красивые картинки:)</h2>
+          <div class="slider-images__container">
+            <div class="slider-images__slider">
+              <div class="slider-images__item"><img src="http://lorempixel.com/1920/1080"/></div>
+              <div class="slider-images__item"><img src="http://lorempixel.com/1920/1080/sports"/></div>
+              <div class="slider-images__item"><img src="http://lorempixel.com/1920/1080/sports/1"/></div>
+            </div>
+          </div>
+          <div class="slider-images__bg"></div>
+        </section>
+        <section class="products">
+          <h2 class="products__title">Индивидуальный подход? Мы знаем что это!</h2>
+          <div class="products__container">
+            <div class="products__wrap products__wrap--first"><a href="#" class="products__link products__link--left products__link--women">
+                <div class="products__imgwrap"><img src="img/women.png" alt="women-notactive" class="products__img products__img--women products__img--notactive"/><img src="img/women-active.png" alt="women-active" class="products__img products__img--women products__img--active"/></div><span class="products__text">Для женщин</span></a><a href="#" class="products__link products__link--left products__link--men">
+                <div class="products__imgwrap"><img src="img/men.png" alt="women-notactive" class="products__img products__img--men products__img--notactive"/><img src="img/men-active.png" alt="women-active" class="products__img products__img--men products__img--active"/></div><span class="products__text">Для мужчин</span></a><a href="#" class="products__link products__link--right products__link--document">
+                <div class="products__imgwrap"><img src="img/documents.png" alt="women-notactive" class="products__img products__img--document products__img--notactive"/><img src="img/documents-active.png" alt="women-active" class="products__img products__img--document products__img--active"/></div><span class="products__text">Для “Мои Документы”</span></a></div>
+            <div class="products__wrap products__wrap--second"><a href="#" class="products__link products__link--left products__link--business">
+                <div class="products__imgwrap"><img src="img/business.png" alt="women-notactive" class="products__img products__img--business products__img--notactive"/><img src="img/business-active.png" alt="women-active" class="products__img products__img--business products__img--active"/></div><span class="products__text">Для бизнеса</span></a><a href="#" class="products__link products__link--left products__link--gos">
+                <div class="products__imgwrap"><img src="img/gos.png" alt="women-notactive" class="products__img products__img--gos products__img--notactive"/><img src="img/gos.png" alt="women-active" class="products__img products__img--gos products__img--active"/></div><span class="products__text">Для государства</span></a><a href="#" class="products__link products__link--right products__link--all">
+                <div class="products__imgwrap"><img src="img/all.png" alt="women-notactive" class="products__img products__img--all products__img--notactive"/><img src="img/all-active.png" alt="women-active" class="products__img products__img--all products__img--active"/></div><span class="products__text">Для всех</span></a></div>
+            <div class="products__wrap products__wrap--hide"></div>
+          </div>
+        </section>
+        <div class="callback">
+          <h2 class="callback__title">Скидки! Супер успех! Вы 33573 и это счастливое число :)</h2>
+          <div class="callback__container">
+            <div class="callback__wrapper">
+              <div class="callback__text">
+                <p>По всем правилам здесь должен быть блок со скидками. Но его не будет) Давайте будем честны, мы уже давно выросли из того возраста, когда верим в красивые сказки и золотые горы.</p>
+                <p>Мы, в студии, можем пойти на уступки, мы можем войти в положение, но скидывать 30, 40, 50 процентов, от надуманных цен, считаем глупым ходом.</p>
+                <p>Обращайтесь! Мы адекватные люди и готовы к честному диалогу с клиентом!</p>
+              </div>
+              <div class="callback__footer"><span>Звоните</span><span class="red">8 (495) 466-23-23</span><span>или</span><span class="red underline callback__button">закажите звонок.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-footer">
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="footer-top__wrap">
+              <div class="footer-top__left">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Предложить сотрудничество</a></li>
+                    <li><a href="#">Написать руководителю</a></li>
+                    <li><a href="#">Политика конфеденциальности</a></li>
+                    <li><a href="#">Авторские права</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-top__right">
+                <div class="footer-text">Создание, разработка, продвижение и поддержка веб сайтов.</div>
+                <div class="footer-social">
+                  <div class="footer-social__text">Мы в соц. сетях:</div>
+                  <div class="footer-social__wrap">
+                    <ul>
+                      <li><a href="#" class="vk"></a></li>
+                      <li><a href="#" class="inst"></a></li>
+                      <li><a href="#" class="pin"></a></li>
+                      <li><a href="#" class="youtube"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__wrap">
+              <div class="footer-bottom__text"><span class="left">2010 - живём и будем жить!</span><img src="img/copy.png" alt="copy"/><span class="right">ВебМатематика</span></div>
+            </div>
+          </div>
+        </footer>
+        <div class="scroll-top">
+          <div class="scroll-top__img"><img src="img/scroll.png" alt="scroll" class="scroll-show"/><img src="img/scroll-active.png" alt="scroll" class="scroll-hiden"/></div>
+          <p>Вверх</p>
+        </div>
+        <div class="modal">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form action="">
+              <div class="modal__item">
+                <input type="text" required="required" placeholder="Имя" onBlur="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)" onkeyup="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)"/>
+              </div>
+              <div class="modal__item">
+                <input type="phone" required="required" placeholder="Телефон" class="input_phone"/>
+              </div>
+              <div class="modal__item">
+                <textarea placeholder="Коментарий"></textarea>
+              </div>
+              <div class="modal__item">
+                <input type="submit" value="Отправить" class="modal__submit"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  </body>
+</html>
