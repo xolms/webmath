@@ -21,7 +21,7 @@
     border-radius: 10em
     border: 3px solid #e2e2e2
     text-align: center
-    padding-top: 7px
+    padding-top: 10px
     font-size: 13px
     &:hover
       background-color: #10c7c5
@@ -53,6 +53,8 @@
     float: left
     width: 40%
     padding-top: 25px
+    a
+      color: #10c7c5
 
   &__center
     float: none
@@ -67,6 +69,8 @@
     color: #10c7c5
     font-size: em(24px)
     font-family: "GardensC"
+    a
+      color: #10c7c5
 
   &__work
     font-size: em(14px)
@@ -99,6 +103,11 @@
     color: #333333
     font-family: "Comfortaa-Light"
     padding-bottom: 20px
+    a
+      color: #333333
+
+  &__item
+    width: 100%
 
   &__buttons
     width: 65px
@@ -177,12 +186,9 @@
     &__text
       p 
         text-overflow: ellipsis
-        height: 150px
-        overflow: hidden
+
 @media screen and (max-width: 350px)
   .reviews
     &__text
       p 
         text-overflow: ellipsis
-        height: 80px
-        overflow: hidden
