@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body>
+    <div class="wrapper-site">
+      <div class="content-site">
+        <header>
+          <div class="header__wrap">
+            <div class="header__left"><a href="#" class="header__logo">
+                <div class="header__logoimg"><img src="img/logo.png" alt="logo"/></div>
+                <div class="header__logotext">
+                  <div class="header__logotitle">ВебМатематика</div>
+                  <div class="header__logodesc">простое решение сложных задач</div>
+                </div></a></div>
+            <div class="header__center">
+              <div class="header__desc">Просто создаём сайты.</div>
+            </div>
+            <div class="header__right">
+              <div class="header__phone">8 (495) 466-23-23 </div>
+              <div class="header__callback">мы вам перезвоним</div>
+            </div>
+            <div class="header__burgerwrap">
+              <div class="header__burger">
+                <div class="header__burgeritem"></div>
+                <div class="header__burgeritem"></div>
+                <div class="header__burgeritem"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <nav>
+          <div class="menu">
+            <div class="menu__wrap">
+              <ul class="menu__list menu__list--first">
+                <li class="menu__item active"><a href="#" class="menu__link">Главная</a></li>
+                <li class="menu__item">
+                  <div onclick="GetMenu('uslugi')" class="menu__link">Услуги </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Портфолио </a></li>
+                <li class="menu__item">
+                  <div onclick="GetMenu('info')" class="menu__link">Инфо</div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+              </ul>
+              <ul class="menu__list menu__list--second menu__list--uslugi">
+                <li class="menu__item">
+                  <div onclick="GetMenu('main')" class="menu__link menu-link--popup">Услуги </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Создание сайтов</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Продвижение</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Поддержка</a></li>
+              </ul>
+              <ul class="menu__list menu__list--second menu__list--info">
+                <li class="menu__item">
+                  <div onclick="GetMenu('main')" class="menu__link menu-link--popup">Инфо </div>
+                </li>
+                <li class="menu__item"><a href="#" class="menu__link">Клиенты</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Статьи		</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="breadcrumbs"><a href="#" class="breadcrumbs__link">Главная</a>
+          <div class="breadcrumbs__link">Отзывы</div>
+        </div>
+        <div style="background-image: url(img/bg-rev.jpg)" class="pagehead">
+          <h1>Отзывы наших клиентов</h1>
+        </div>
+        <div class="reviewspage">
+          <div class="reviewspage__wrap">
+            <div class="reviewspage__left">
+              <h2 class="reviewspage__title">Отзывы</h2>
+              <div class="rev__item">
+                <div class="rev__top">
+                  <div class="rev__topleft">
+                    <div class="rev__name">Екатерина Иванова</div>
+                    <div class="rev__work">Индивидуальный предприниматель</div>
+                  </div>
+                  <div class="rev__topcenter"><img src="http://lorempixel.com/1920/1080"/></div>
+                  <div class="rev__topright">
+                    <div class="rev__site"> <a href="#">	Работа: beautyelixir.ru</a></div>
+                    <div class="rev__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
+                  </div>
+                </div>
+                <div class="rev__center">
+                  <p>У студии очень правильная концепция: делать сайты так, чтобы ими гордиться. Мы бы сказали: «делать сайты так, чтобы их с удовольствием посещали». Всем ясно, что в Интернет идут в первую очередь за информацией. Пользователи не любят, когда путь к нужным им данным на ресурсе запутан и суров. Мы рады, что студи ВебМатематика это понимает и разрабатывает свои проекты соответствующе.</p>
+                  <p>Мы довольны работой со студией и интернет-ресурсом, который получили. Процесс сотрудничества с агенством оказался на редкость гладким, хотя были спорные моменты (как в любой коллективной работе). </p>
+                </div>
+                <div class="rev__footer">
+                  <div class="rev__footerright"><a href="#"><img src="http://lorempixel.com/1920/1080"/></a><a href="#"><img src="http://lorempixel.com/1920/1080"/></a><a href="#"><img src="http://lorempixel.com/1920/1080"/></a></div>
+                </div>
+              </div>
+              <div class="rev__item">
+                <div class="rev__top">
+                  <div class="rev__topleft">
+                    <div class="rev__name">Екатерина Иванова</div>
+                    <div class="rev__work">Индивидуальный предприниматель</div>
+                  </div>
+                  <div class="rev__topcenter"><img src="http://lorempixel.com/1920/1080"/></div>
+                  <div class="rev__topright">
+                    <div class="rev__site"> <a href="#">	Работа: beautyelixir.ru</a></div>
+                    <div class="rev__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
+                  </div>
+                </div>
+                <div class="rev__center">
+                  <p>У студии очень правильная концепция: делать сайты так, чтобы ими гордиться. Мы бы сказали: «делать сайты так, чтобы их с удовольствием посещали». Всем ясно, что в Интернет идут в первую очередь за информацией. Пользователи не любят, когда путь к нужным им данным на ресурсе запутан и суров. Мы рады, что студи ВебМатематика это понимает и разрабатывает свои проекты соответствующе.</p>
+                  <p>Мы довольны работой со студией и интернет-ресурсом, который получили. Процесс сотрудничества с агенством оказался на редкость гладким, хотя были спорные моменты (как в любой коллективной работе). </p>
+                </div>
+                <div class="rev__footer">
+                  <div class="rev__footerright"><a href="#"><img src="http://lorempixel.com/1920/1080"/></a><a href="#"><img src="http://lorempixel.com/1920/1080"/></a><a href="#"><img src="http://lorempixel.com/1920/1080"/></a></div>
+                </div>
+              </div>
+              <div class="rev__item">
+                <div class="rev__top">
+                  <div class="rev__topleft">
+                    <div class="rev__name">Екатерина Иванова</div>
+                    <div class="rev__work">Индивидуальный предприниматель</div>
+                  </div>
+                  <div class="rev__topcenter"><img src="http://lorempixel.com/1920/1080"/></div>
+                  <div class="rev__topright">
+                    <div class="rev__site"> <a href="#">	Работа: beautyelixir.ru</a></div>
+                    <div class="rev__history"> <a href="#">История</a><span>, </span><a href="#">контакты</a></div>
+                  </div>
+                </div>
+                <div class="rev__center">
+                  <p>У студии очень правильная концепция: делать сайты так, чтобы ими гордиться. Мы бы сказали: «делать сайты так, чтобы их с удовольствием посещали». Всем ясно, что в Интернет идут в первую очередь за информацией. Пользователи не любят, когда путь к нужным им данным на ресурсе запутан и суров. Мы рады, что студи ВебМатематика это понимает и разрабатывает свои проекты соответствующе.</p>
+                  <p>Мы довольны работой со студией и интернет-ресурсом, который получили. Процесс сотрудничества с агенством оказался на редкость гладким, хотя были спорные моменты (как в любой коллективной работе). </p>
+                </div>
+                <div class="rev__footer">
+                  <div class="rev__footerright"><a href="#"><img src="http://lorempixel.com/1920/1080"/></a><a href="#"><img src="http://lorempixel.com/1920/1080"/></a><a href="#"><img src="http://lorempixel.com/1920/1080"/></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="reviewspage__right">
+              <h2 class="reviewspage__title">Оставить отзыв</h2>
+              <form class="formrev">
+                <div class="formrev__item">
+                  <input type="text" placeholder="Имя" onBlur="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)" onkeyup="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)"/>
+                </div>
+                <div class="formrev__item">
+                  <input type="phone" placeholder="Телефон" id="input_phone"/>
+                </div>
+                <div class="formrev__item">
+                  <input type="text" placeholder="Компания"/>
+                </div>
+                <div class="formrev__item">
+                  <input type="text" placeholder="Должность"/>
+                </div>
+                <div class="formrev__item">
+                  <textarea name="" cols="30" rows="10" placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="formrev__item">
+                  <button type="submit" class="rev_submit">Отправить</button>
+                </div>
+              </form>
+              <h2 class="reviewspage__title reviewspage__title--none">Наши клиенты</h2>
+              <div class="myclients">
+                <div class="myclients__wrap">
+                  <div class="myclients__item"><a href="#"><img src="http://lorempixel.com/1920/1080"/></a></div>
+                  <div class="myclients__item"><a href="#"><img src="http://lorempixel.com/1920/1080"/></a></div>
+                  <div class="myclients__item"><a href="#"><img src="http://lorempixel.com/1920/1080"/></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="callback">
+          <div class="callback__container">
+            <div class="callback__wrapper">
+              <div class="callback__text callback__text--biger">
+                <p>У вас есть классная идея? Или уже нужно изменить имеющийся сайт?</p>
+                <p>Пишите, и мы сможем найти для вас лучшее решение!</p>
+              </div>
+              <div class="callback__footer callback__footer--button">Отправить заявку</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-footer">
+        <footer class="footer">
+          <div class="footer-top">
+            <div class="footer-top__wrap">
+              <div class="footer-top__left">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Предложить сотрудничество</a></li>
+                    <li><a href="#">Написать руководителю</a></li>
+                    <li><a href="#">Политика конфеденциальности</a></li>
+                    <li><a href="#">Авторские права</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-top__right">
+                <div class="footer-text">Создание, разработка, продвижение и поддержка веб сайтов.</div>
+                <div class="footer-social">
+                  <div class="footer-social__text">Мы в соц. сетях:</div>
+                  <div class="footer-social__wrap">
+                    <ul>
+                      <li><a href="#" class="vk"></a></li>
+                      <li><a href="#" class="inst"></a></li>
+                      <li><a href="#" class="pin"></a></li>
+                      <li><a href="#" class="youtube"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__wrap">
+              <div class="footer-bottom__text"><span class="left">2010 - живём и будем жить!</span><img src="img/copy.png" alt="copy"/><span class="right">ВебМатематика</span></div>
+            </div>
+          </div>
+        </footer>
+        <div class="scroll-top">
+          <div class="scroll-top__img"><img src="img/scroll.png" alt="scroll" class="scroll-show"/><img src="img/scroll-active.png" alt="scroll" class="scroll-hiden"/></div>
+          <p>Вверх</p>
+        </div>
+        <div class="modal">
+          <div class="modal__wrapper">
+            <h2 class="modal__title">Заказать звонок</h2>
+            <form action="">
+              <div class="modal__item">
+                <input type="text" required="required" placeholder="Имя" onBlur="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)" onkeyup="this.value=this.value.replace(/[^йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,&quot;&quot;)"/>
+              </div>
+              <div class="modal__item">
+                <input type="phone" required="required" placeholder="Телефон" class="input_phone"/>
+              </div>
+              <div class="modal__item">
+                <textarea placeholder="Коментарий"></textarea>
+              </div>
+              <div class="modal__item">
+                <button type="submit" class="modal__submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  </body>
+</html>

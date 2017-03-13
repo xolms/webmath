@@ -1,40 +1,7 @@
 extend template
 block content
-	include reviews/beard
-	.pagehead( style="background-image: url(img/bg-rev.jpg)")
-		h1 Отзывы наших клиентов
-	.reviewspage
-		.reviewspage__wrap
-			.reviewspage__left
-				h2.reviewspage__title Отзывы
-				+revitem
-				+revitem
-				+revitem
-			.reviewspage__right
-				h2.reviewspage__title Оставить отзыв
-				form().formrev
-					.formrev__item
-						input(type="text" placeholder="Имя" onBlur='this.value=this.value.replace(/[^\йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,"")' onkeyup='this.value=this.value.replace(/[^\йцукенгшщзхъфывапролджэячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ]/ig,"")' )
-					.formrev__item
-						input(type="phone" placeholder="Телефон" id="input_phone")
-					.formrev__item
-						input(type="text" placeholder="Компания")
-					.formrev__item
-						input(type="text" placeholder="Должность")
-					.formrev__item
-						textarea(name="", cols="30", rows="10" placeholder="Ваш комментарий")
-					.formrev__item
-						button(type="submit" class="rev_submit") Отправить
-				h2.reviewspage__title.reviewspage__title--none Наши клиенты
-				.myclients
-					.myclients__wrap
-						.myclients__item
-							a(href="#")
-								img(src="http://lorempixel.com/1920/1080")
-						.myclients__item
-							a(href="#")
-								img(src="http://lorempixel.com/1920/1080")
-						.myclients__item
-							a(href="#")
-								img(src="http://lorempixel.com/1920/1080")
-	include reviews/callback
+	include index/whoyu
+	include index/formine
+	include index/slider_image
+	include index/section_producr
+	include index/callback
